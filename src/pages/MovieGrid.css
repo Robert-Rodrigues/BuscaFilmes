@@ -42,3 +42,20 @@
 .movies-container div svg {
     color: #F7D354;
 }
+
+.movies-container div a {
+    background-color: #F7D354;
+    border: 2px solid  #F7D354;
+    border-radius: 4px;
+    color: #000;
+    padding: 1rem 0.5rem;
+    transition: 0.4s;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.movies-container div a:hover {
+    background-color: #E0AE41;
+    border-color: #E0AE41;
+}
