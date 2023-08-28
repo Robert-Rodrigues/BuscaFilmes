@@ -34,7 +34,7 @@
 
 .tagline {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
 
@@ -55,4 +55,30 @@
 
 .description p {
     line-height: 1.5rem;
+}
+
+/*responsividade*/
+
+@media (max-width: 768px) {
+
+.movie-page {
+    margin: 1rem auto;
+    padding: 1rem;
+ }
+ 
+.movie-page .movie-card h2,
+.movie-page .movie-card p,
+.movie-page .movie-card img {
+    margin-bottom: 0.8rem;
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    padding-bottom: 0;
+ }
 }

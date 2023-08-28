@@ -6,10 +6,14 @@
     background-color: #121212;
 }
 
-#navbar h2 a {
+#navbar h2 a.PCView {
     display: flex;
     align-items: center;
     gap: 0.5;
+}
+
+#navbar h2 a.MobileView {
+    display: none;
 }
 
 #navbar form {
@@ -38,4 +42,29 @@
 #navbar form button:hover {
     background-color: #E0AE41;
     border-color: #E0AE41;
+}
+
+/*responsividade*/
+
+@media (max-width: 768px) {
+
+#navbar {
+    padding: 0 2rem 0 -1rem;
+}
+
+#navbar h2 a.PCView {
+    display: none;
+}
+
+#navbar h2 a.MobileView{
+    display: flex;
+    font-size: 3rem;
+    margin: -0.2rem -2rem 0 -0.5rem;
+ }
+
+ #navbar form {
+    display: flex;
+    margin: 0 2.5rem 0 1rem;
+}
+
 }

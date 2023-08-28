@@ -37,6 +37,7 @@
 .movies-container div h2,
 .movies-container div p {
     margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .movies-container div svg {
@@ -58,4 +59,49 @@
 .movies-container div a:hover {
     background-color: #E0AE41;
     border-color: #E0AE41;
+}
+
+/*responsividade*/
+
+@media (max-width: 768px) {
+.container .title {
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+.movies-container {
+    padding: 0;
+    margin: 0 2rem 0 0 0;
+}
+
+.movies-container div h2 {
+    font-size: 0.7rem;
+}
+
+.movies-container div {
+    width: 48%;
+    margin: 0rem 0.2rem 0.7rem 0.2rem;
+    border-radius: 4px;
+}
+
+.movies-container div img,
+.movies-container div h2,
+.movies-container div p {
+    margin-bottom: 0.5rem;
+}
+
+.movies-container .vote-average svg {
+    color: #F7D354;
+    font-size: 0.7rem;
+}
+
+.movies-container .vote-average {
+    font-size: 0.7rem;
+}
+
+.movies-container div a {
+    border-radius: 4px;
+    padding: 0.6rem 0.3rem;
+    font-size: 0.7rem;
+ }
 }

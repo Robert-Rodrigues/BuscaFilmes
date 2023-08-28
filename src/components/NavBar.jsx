@@ -19,7 +19,8 @@ const NavBar = () => {
   return (
     <nav id='navbar'>
       <h2>
-        <Link to="/"><BiCameraMovie />BuscaFilmes</Link>
+      <Link className="MobileView" to="/"><BiCameraMovie /></Link> 
+        <Link className="PCView" to="/"><BiCameraMovie />BuscaFilmes</Link>
       </h2>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder='Procure um filme' onChange={(e) =>setSearch(e.target.value)}
